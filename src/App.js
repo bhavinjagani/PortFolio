@@ -72,19 +72,28 @@ export default function App() {
             </div>
           </section>
           <section id="skills" className="py-20 text-center basis-2/5 ml-2">
-            <h2 className="text-4xl font-bold">Technical Skills</h2>
+            <h2 className="text-4xl font-bold">Frameworks / Languages /  Libraries / Tools</h2>
             <div className="flex  flex-wrap gap-2 mt-4 glass">
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">HTML</span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">CSS</span>
-              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">JavaScript</span>
+              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">JavaScript(ES6+)</span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">TypeScript</span>
+              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded" >PostgreSQL</span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">Python</span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">React.js</span>
-              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">Angular.js</span>
+              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">Angular</span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">Express.js</span>
+              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">Next.js</span>
+              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">jQuery</span>
+               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">REST APIs</span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">Node.js</span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">MySql</span>
+              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounde">Jira</span>
+              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounde">Monday.com</span>
+              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounde">CI/CD pipelines</span>
+              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounde">Docker</span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">MongoDB</span>
+              <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">Bootstrap </span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">SEO</span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">Github</span>
               <span className="px-4 py-2 mt-1 mb-1 bg-gray-300  rounded">Git</span>
@@ -108,6 +117,11 @@ export default function App() {
         <section id="experience" className="py-20">
           <h2 className="text-3xl font-bold text-center">Experience</h2>
           <div className="mt-6 space-y-4 max-w-3xl mx-auto">
+             <motion.div whileHover={{ scale: 1.05 }} className="p-4 bg-gray-200 rounded shadow cursor-pointer relative" onClick={() => handlePopup("university of texas at arlington", "https://www.uta.edu/", " • ●	Developed and scaled full-stack features for FabApp, a React and Node.js-based makerspace management platform serving 15,000+ students and faculty, supporting reservations and tracking for 50+ equipment assets including 3D printers, laser cutters, kilns, and screen printers.\n • ●	Delivered enhancements and resolved critical issues across user role management, wait-queue workflows, and reservation scheduling modules, improving system reliability by 35% and reducing booking conflicts by 30% during peak usage periods. \n • ●	Refactored shared UI elements into reusable component libraries, increasing component reusability and reducing duplicate code by 30%.\n • Implemented custom tags and functions to track product details in Google Analytics, enabling detailed performance analysis.\n • ●	Optimized front-end components and backend APIs to support smooth operations for students and staff, reducing friction in booking, tracking, and managing makerspace resources.")}>
+              <h3 className="font-semibold h-12">Full Stack Developer - UT Arlington Texas </h3>
+              <p className="text-sm">Sep 2025 - Present</p>
+              <button className="px-1 py-2 mt-1 mb-1 bg-gray-300 absolute rounded right-4 bottom-1">More Details</button>
+            </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} className="p-4 bg-gray-200 rounded shadow cursor-pointer relative" onClick={() => handlePopup("GIR Software Services - Oracle NetSuite Alliance Partner", "https://girsoftwareservices.com/", " • Crafted a strategic solution for managing pre-order and back-order inventory that established clear visibility of stock levels, resulting in a 30% improvement in order accuracy and enhanced customer experience metrics.\n • Enhanced the performance of existing web pages by employing HTML, CSS, and JavaScript to optimize them for mobile devices; directly resulted in a 40% increase in mobile user interactions within one-month post-launch. \n • Streamlined the checkout process, reducing cart abandonment by 25% and boosting transaction completion rates, leading to increased sales over three months.\n • Implemented custom tags and functions to track product details in Google Analytics, enabling detailed performance analysis.\n • Developed a unique multi-step 'Gift Box Builder' tool on the e-commerce site, attracting more than 500 monthly users while enhancing personalized gifting experiences and elevating overall user interaction rates by approximately 30%.")}>
               <h3 className="font-semibold h-12">Web Developer - Get It Right Software Services</h3>
               <p className="text-sm">May 2022 - July 2024</p>
