@@ -1,4 +1,46 @@
-.font-size-custom {
-  font-size: 7px;
-  line-height: 10px;
+.hero-section {
+  background: linear-gradient(135deg, #f8faff 0%, #eef2ff 50%, #f5f3ff 100%);
+  position: relative;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 60%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.skill-badge {
+  background: #ffffff;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  transition: all 0.18s ease;
+}
+
+.skill-badge:hover {
+  background: #eef2ff;
+  border-color: #a5b4fc;
+  color: #4f46e5;
+}
+
+.experience-card {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-card:hover {
+  border-color: #c7d2fe;
+}
+
+.scroll-indicator {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
 }
