@@ -240,7 +240,7 @@ export default function App() {
               Get In Touch
             </Link>
             <a
-              href={`${process.env.PUBLIC_URL}/Resume_Bhavin_Master.pdf`}
+              href={`${process.env.PUBLIC_URL}/Bhavin_Jagani_Resume.pdf`}
               download="Bhavin_Jagani_Resume.pdf"
               className="flex items-center gap-2 px-8 py-3.5 border-2 border-gray-200 text-gray-700 font-semibold rounded-lg hover:border-indigo-400 hover:text-indigo-600 transition-colors"
             >
