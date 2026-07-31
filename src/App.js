@@ -36,14 +36,14 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company: "FabLab – University of Texas at Arlington",
-    period: "Aug 2025 – Present",
+    period: "Aug 2025 – May 2026",
     type: "Full-time",
     link: "https://www.uta.edu/",
     highlights: [
-      "Developed and scaled full-stack features for FabApp, a SaaS makerspace management platform serving 15,000+ students and faculty — owning the full development lifecycle across a React/JavaScript frontend, Node.js API layer, and MySQL backend deployed on AWS with CI/CD pipelines.",
-      "Improved system reliability by 35% and reduced booking conflicts by 30% through TDD-driven enhancements to user role management, on-call-incident-managed workflows, and reservation scheduling modules.",
-      "Refactored shared UI into reusable component libraries, increasing reusability by 30% and reducing code duplication following microservices-based design principles.",
-      "Optimized frontend and backend performance with Datadog observability and GitHub Actions CI/CD for automated, production-grade deployments.",
+      " Led development of FabApp, a React/TypeScript/Node.js/PostgreSQL platform serving 15,000+ monthly users, owning features end-to-end from architecture and schema design through testing and production deployment",
+      "Translated complex operational rules involving equipment access, certifications, and scheduling constraints into maintainable, production-grade services, including reservation logic that resolved rule interactions correctly during peak usage.",
+      "Automated data migration, reporting, and equipment-usage analysis workflows with Python scripts, reducing manual administrative effort and improving data accuracy across 15,000+ user records.",
+      " Implemented SSO with Azure AD and SAML, designed JWT authentication strategies for token-based sessions, and enforced role-based access control to maintain secure, granular user access."
     ],
   },
   {
@@ -53,12 +53,12 @@ const experiences = [
     type: "Full-time",
     link: "https://girsoftwareservices.com/",
     highlights: [
-      "Engineered a pre-order/back-order inventory management solution with real-time stock visibility, improving order accuracy by 30% and enhancing customer satisfaction metrics.",
-      "Improved frontend performance via code splitting, lazy loading, and bundle optimization — reducing initial page load time by 40% and boosting Lighthouse score from 68 to 92.",
-      "Enhanced mobile responsiveness with targeted HTML/CSS/JS optimizations, achieving a 40% increase in mobile user interactions within one month of launch.",
-      "Streamlined checkout UX with form optimization and flow improvements, reducing cart abandonment by 25% and driving measurable revenue growth.",
-      "Built a multi-step Gift Box Builder in React + TypeScript, attracting 500+ monthly active users and lifting personalized gifting interactions by 30%.",
-    ],
+      "Built and customized Oracle NetSuite ERP billing workflows covering pre-order, back-order, and order fulfillment logic, supporting accurate invoicing and order-state management",
+      "Engineered pre-order and back-order inventory management with real-time stock visibility, translating complex stock states and order-priority rules into reliable production cod",
+      " Improved frontend performance through code splitting, lazy loading, and bundle optimization, cutting page load time by approximately 40% and raising the Lighthouse score from 68 to 92.",
+      "Integrated Google Tag Manager with custom event tracking across 10+ trigger points (PLP views, PDP visits, add-to-wishlist), firing to Google Analytics for granular funnel visibility",
+      "Developed a multi-step Gift Box Builder with React and TypeScript, attracting 500+ monthly active users and increasing personalized gifting interactions by 30%."
+     ],
   },
   {
     title: "Web Developer Intern",
@@ -76,31 +76,20 @@ const experiences = [
 
 const projects = [
   {
-    title: "OLX Replica",
-    subtitle: "Full-Stack Marketplace · 2023",
+    title: "BuyNSale – Marketplace",
+    subtitle: "Full-Stack Marketplace",
     stack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "AWS Lambda", "PostgreSQL"],
     bullets: [
       "Architected a full-stack buy/sell marketplace with JWT-based secure user authentication and real-time listings.",
       "Built and deployed a serverless API using AWS Lambda & API Gateway with PostgreSQL for structured data storage.",
     ],
-    github: "https://github.com/bhavinjagani",
-  },
-  {
-    title: "FabApp – Makerspace Platform",
-    subtitle: "Enterprise SaaS · Production",
-    stack: ["React.js", "Node.js", "MySQL", "AWS", "GitHub Actions", "Datadog"],
-    bullets: [
-      "Production SaaS platform at UT Arlington serving 15,000+ users across 50+ equipment assets.",
-      "Full lifecycle ownership: frontend, API layer, MySQL backend, AWS deployment, CI/CD, and observability.",
-      "35% reliability improvement and 30% reduction in booking conflicts post-refactor.",
-    ],
+    link:"https://buynsale.duckdns.org/",
     github: "https://github.com/bhavinjagani",
   },
 ];
 
 const stats = [
   { value: "3+", label: "Years Experience" },
-  { value: "3", label: "Companies" },
   { value: "50K+", label: "Users Impacted" },
   { value: "10+", label: "Technologies" },
 ];
@@ -109,8 +98,8 @@ const education = [
   {
     degree: "Master of Science in Computer Science",
     school: "University of Texas at Arlington",
-    period: "Aug 2024 – Present",
-    gpa: "CGPA: 3.66 / 4.0",
+    period: "Aug 2024 – May 2026",
+    gpa: "CGPA: 3.4 / 4.0",
     location: "Arlington, TX, USA",
   },
   {
@@ -326,14 +315,6 @@ export default function App() {
                 every role: 35% better system reliability, Lighthouse scores from 68 → 92,
                 25% fewer cart abandonments.
               </p>
-              <p>
-                Currently pursuing a{" "}
-                <strong className="text-gray-900">
-                  Master's in Computer Science (GPA 3.66) at UT Arlington
-                </strong>{" "}
-                while working as a Full Stack Developer on a production SaaS platform —
-                deepening both engineering depth and computer science fundamentals simultaneously.
-              </p>
             </div>
           </motion.div>
         </div>
@@ -478,7 +459,14 @@ export default function App() {
               >
                 <div>
                   <h3 className="text-lg font-bold text-gray-900">{proj.title}</h3>
-                  <p className="text-xs text-indigo-600 font-semibold mt-0.5">{proj.subtitle}</p>
+                    <a
+                      href={proj.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 text-indigo-600 font-semibold hover:underline mt-1 text-sm"
+                    >
+                      {proj.subtitle} <FiExternalLink className="text-xs" />
+                    </a>
                 </div>
                 <ul className="space-y-1.5 flex-1">
                   {proj.bullets.map((b, j) => (
